@@ -22,4 +22,10 @@ def auth_url():
 def authenticate(cls,
                  auth_url=auth_url()):
     """Authenticate against the HP Cloud auth service."""
-    return cls._v2_auth(auth_url)
+    body = {"auth": {
+        "apiAccessKeyCredentials": {
+            "accessKey": cls.user,
+            "secretKey": cls.password,
+            },
+        "tenantName": cls.projectid}}
+    return cls._authenticate(auth_url, body)
