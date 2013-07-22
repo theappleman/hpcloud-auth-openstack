@@ -12,9 +12,9 @@ variables are required:
 
 ::
 
-    [hpcloud]  
-    OS_USERNAME = API Access Key  
-    OS_PASSWORD = API Secret Key  
-    OS_TENANT_NAME = Project Name  
+    [hpcloud]
+    OS_USERNAME = API Access Key
+    OS_PASSWORD = API Secret Key
+    OS_TENANT_NAME = Project Name
     OS_AUTH_SYSTEM = "hpcloud"
     OS_REGION_NAME = az-[123].region-[ab].geo-1
